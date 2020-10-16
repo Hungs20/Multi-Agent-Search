@@ -83,7 +83,7 @@ class ReflexAgent(Agent):
           posGhost = k.getPosition()
           distanceGhost = min(distanceGhost, util.manhattanDistance(posGhost, newPos))
         if distanceGhost <= 1:
-          distanceFood = float('-inf')
+          distanceFood = float('inf')
         return successorGameState.getScore() + 1.0/distanceFood
 
 def scoreEvaluationFunction(currentGameState):
